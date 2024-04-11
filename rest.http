@@ -1,8 +1,8 @@
 ###Get a list of all products
-GET http://localhost:3000/products
+GET http://localhost:3004/products
 
 ### Create a product
-POST http://localhost:3000/products
+POST http://localhost:3004/products
 Content-Type: application/json
 
 {
@@ -26,7 +26,7 @@ Content-Type: application/json
 DELETE  http://localhost:3000/products/5df118b3c86e5826958b661a
 
 ### 404 route Not Found
-GET http://localhost:3000/abc_xyz
+GET http://localhost:3004/abc_xyz
 
 
 

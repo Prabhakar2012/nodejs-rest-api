@@ -6,6 +6,9 @@ services:
     container_name: db_container
     image: mongo:latest
     restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password123
     volumes:
       - mongo_db:/data/db
 
@@ -16,6 +19,8 @@ services:
       
       environment:
         PORT: 3004
+        MONGO_INITDB_ROOT_USERNAME: root
+        MONGO_INITDB_ROOT_PASSWORD: password123
         MONGODB_URI: mongodb://mongo_db:27017
         DB_NAME: my_db
         DB_USER: root 
